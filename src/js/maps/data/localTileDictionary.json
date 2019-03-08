@@ -1,0 +1,129 @@
+{
+  "Machine-South": {
+    "glyph": "⌸",
+    "fgColor": ["#7a8890", "#7a8890", "#7a8890"],
+    "bgColor": ["#2d3336", "#2d3336", "#2d3336"],
+    "traversable": false,
+    "startable": false,
+    "concealment": 100,
+    "cover": 0
+  },
+  "Machine-Top": {
+    "glyph": "⎕",
+    "fgColor": ["#7a8890", "#7a8890", "#7a8890"],
+    "bgColor": ["#1e2224", "#1e2224", "#1e2224"],
+    "traversable": false,
+    "startable": false,
+    "concealment": 100,
+    "cover": 0
+  },
+  "Goal": {
+    "glyph": "ᐁ",
+    "fgColor": ["#FFFFFF", "#FFFFFF", "#FFFFFF"],
+    "bgColor": ["#50788d", "#788d50", "#8d5078"],
+    "traversable": false,
+    "startable": false,
+    "concealment": 0,
+    "cover": 0
+  },
+  "Wall-Top-North-West": {
+    "glyph": "╔",
+    "fgColor": ["#99a2b1", "#616a5b", "#6a5b61"],
+    "bgColor": ["#00183c", "#183c00", "#3c0018"],
+    "traversable": false,
+    "startable": false,
+    "concealment": 100,
+    "cover": 0
+  },
+  "Wall-Top-North-East": {
+    "glyph": "╗",
+    "fgColor": ["#99a2b1", "#616a5b", "#6a5b61"],
+    "bgColor": ["#00183c", "#183c00", "#3c0018"],
+    "traversable": false,
+    "startable": false,
+    "concealment": 100,
+    "cover": 0
+  },
+  "Wall-Top-South-West": {
+    "glyph": "╚",
+    "fgColor": ["#99a2b1", "#616a5b", "#6a5b61"],
+    "bgColor": ["#00183c", "#183c00", "#3c0018"],
+    "traversable": false,
+    "startable": false,
+    "concealment": 100,
+    "cover": 0
+  },
+  "Wall-Top-South-East": {
+    "glyph": "╝",
+    "fgColor": ["#99a2b1", "#616a5b", "#6a5b61"],
+    "bgColor": ["#00183c", "#183c00", "#3c0018"],
+    "traversable": false,
+    "startable": false,
+    "concealment": 100,
+    "cover": 0
+  },
+  "Wall-Top-North-South": {
+    "glyph": "║",
+    "fgColor": ["#99a2b1", "#616a5b", "#6a5b61"],
+    "bgColor": ["#00183c", "#183c00", "#3c0018"],
+    "traversable": false,
+    "startable": false,
+    "concealment": 100,
+    "cover": 0
+  },
+  "Wall-Top-East-West": {
+    "glyph": "═",
+    "fgColor": ["#99a2b1", "#616a5b", "#6a5b61"],
+    "bgColor": ["#00183c", "#183c00", "#3c0018"],
+    "traversable": false,
+    "startable": false,
+    "concealment": 100,
+    "cover": 0
+  },
+  "Wall-Top": {
+    "glyph": "╬",
+    "fgColor": ["#192f4f", "#616a5b", "#6a5b61"],
+    "bgColor": ["#00183c", "#183c00", "#3c0018"],
+    "traversable": false,
+    "startable": false,
+    "concealment": 100,
+    "cover": 0
+  },
+  "Wall-South": {
+    "glyph": "█",
+    "fgColor": ["#005b96", "#5b9600", "#96005b"],
+    "bgColor": ["#011f4b", "#1f4b01", "#4b011f"],
+    "traversable": false,
+    "startable": false,
+    "concealment": 100,
+    "cover": 0
+  },
+  "Floor": {
+    "huh": "□",
+    "glyph": "┼",
+    "fgColor": ["#6497b1", "#97b164", "#b16497"],
+    "bgColor": ["#50788d", "#788d50", "#8d5078"],
+    "traversable": true,
+    "startable": true,
+    "concealment": 0,
+    "cover": 0
+  },
+  "Passable": {
+    "glyph": ".",
+    "fgColor": "#FFFFFF",
+    "bgColor": "#000000",
+    "traversable": true,
+    "startable": true,
+    "concealment": 0,
+    "cover": 0
+  },
+  "Impassable": {
+    "glyph": "#",
+    "fgColor": "#FFFFFF",
+    "bgColor": "#000000",
+    "traversable": false,
+    "startable": false,
+    "concealment": 100,
+    "cover": 80
+  }
+}
