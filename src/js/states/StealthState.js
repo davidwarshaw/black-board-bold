@@ -1,6 +1,7 @@
 import properties from '../properties';
 import State from './State';
 import CodecState from './CodecState';
+import GameOverState from './GameOverState';
 
 import InterstitialState from '../states/InterstitialState';
 
@@ -56,10 +57,7 @@ export default class StealthState extends State {
   gameOver() {
     this.game.playState.captures++;
 
-    const text = `Level ${this.game.playState.level}`;
-    const stealthState = new StealthState(this.game);
-    this.game.switchState(
-      new InterstitialState(this.game, text, stealthState));
+    this.game.switchState(new GameOverState(this.game));
   }
 
   gameComplete() {

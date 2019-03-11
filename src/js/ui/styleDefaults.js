@@ -27,6 +27,8 @@ export default {
   // #651e3e
   // #851e3e
 
+  sparkBlueLight: '#005b96',
+  sparkBlueMid: '#6497b1',
   codecLight: '#a2b199',
   codecMid: '#5b9600',
   codecDark: '#183c00',

@@ -39,5 +39,6 @@ export default {
   sleepTurns: 40,
   reverseTurnChance: 25,
   turnDownCorridorChance: 15,
-  textAnimationMillis: 50
+  textAnimationMillis: 50,
+  gameOverAnimationMillis: 30
 };

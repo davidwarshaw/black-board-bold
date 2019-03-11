@@ -10,8 +10,8 @@ export default class CodecState extends State {
 
     this.toMenu = toMenu;
 
-    this.menu = new Codec(game, this, conversation);
-    this.windowManager.addWindow(this.menu);
+    this.codec = new Codec(game, this, conversation);
+    this.windowManager.addWindow(this.codec);
   }
 
 
@@ -37,7 +37,7 @@ export default class CodecState extends State {
 
       Guards knocked out: ${this.game.playState.guardsKnockedOut}
 
-      Guards woke up after being knocked out: ${this.game.playState.guardsWokeUp}
+      Guards woke up: ${this.game.playState.guardsWokeUp}
 
       Total turns elapsed: ${this.game.playState.totalTurns}
       `;

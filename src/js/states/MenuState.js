@@ -28,7 +28,8 @@ export default class MenuState extends State {
   }
 
   help() {
-    this.game.switchState(new CodecState(this.game, text.helpConversation));
+    const helpState = new CodecState(this.game, text.helpConversation, true);
+    this.game.switchState(helpState);
   }
 
 }

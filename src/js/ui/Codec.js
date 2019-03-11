@@ -11,8 +11,6 @@ export default class Codec extends Window {
     this.state = state;
     this.conversation = conversation;
 
-    this.pointerToPlay = true;
-
     this.eqX = 46;
     this.eqY = 7;
 
