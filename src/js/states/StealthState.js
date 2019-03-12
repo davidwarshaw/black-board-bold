@@ -1,4 +1,6 @@
 import properties from '../properties';
+import utils from '../util/utils';
+
 import State from './State';
 import CodecState from './CodecState';
 import GameOverState from './GameOverState';
@@ -35,7 +37,8 @@ export default class StealthState extends State {
       .startingPositions(map, playerStart, radius);
 
     const player = new Character(this.game, playerStart);
-    const enemies = [...Array(level).keys()].map((i) => {
+    const numEnemies = utils.clamp(Math.floor(level / 2) + 2, 1, level);
+    const enemies = [...Array(numEnemies).keys()].map((i) => {
       const turnClockwise = properties.rng.getPercentage() <= 50;
       const moveThisTurn = properties.rng.getPercentage() <= 50;
       return new Enemy(

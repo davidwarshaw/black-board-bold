@@ -94,13 +94,36 @@ export default class Codec extends Window {
     this.colNumber++;
     if (this.colNumber > maxLine) {
       clearInterval(this.intervalId);
+      this.intervalId = null;
     }
+  }
+
+  renderText(display) {
+    const lines = text.gameOverLogo.split('\n');
+    lines.forEach((line, i) => {
+      const chars = line.split('');
+      for (let j = 0; j < this.colNumber; j++) {
+        const char = chars[j];
+        const fgColor = char === '-' || char === '_' ?
+          this.style.codecMid :
+          this.style.codecLight;
+        display.draw(this.gameOverX + j, this.gameOverY + i, char,
+          fgColor, this.style.bgColor);
+      }
+    });
   }
 
   render(display) {
     if (!this.display) {
       this.display = display;
     }
+
+    // If the animation is over, display the game over text normally
+    if (!this.intervalId) {
+      console.log('renderText');
+      this.renderText(display);
+    }
+
     const menuX = 57;
     const menuY = 28;
     display.drawText(menuX, menuY,
