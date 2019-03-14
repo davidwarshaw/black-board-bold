@@ -220,9 +220,10 @@ export default class Enemy extends Character {
     switch(this.mode) {
       case 'Patrol': {
 
-        const tileAheadTraversable = local.getTile(
+        const tileAhead = local.getTile(
           this.x + (2 * this.facing.x),
-          this.y + (2 * this.facing.y)).traversable;
+          this.y + (2 * this.facing.y));
+        const tileAheadTraversable = tileAhead && tileAhead.traversable;
 
         const corridorLeft = this.corridorAtAngle(local, -1 * (Math.PI / 2));
         const corridorRight = this.corridorAtAngle(local, Math.PI / 2);
